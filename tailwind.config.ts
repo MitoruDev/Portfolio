@@ -13,8 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      linearGradients: {
+        'to-right': ['to right', '#06B6D4', '#9333EB'],
+        'bottom-to-top': ['to top right', '#06B6D4', '#9333EB'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients'),
+  ],
 };
 export default config;
